@@ -641,6 +641,12 @@ progress::-webkit-progress-bar {
 	border-radius: 5px;	
 }
 
+.course-links{
+	text-decoration: none;
+	color:yellow;
+	font-weight: bolder;
+}
+
 .project{
 	background:#BCE954;
   }
