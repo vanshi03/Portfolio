@@ -16,7 +16,7 @@ body{
 }
 
 .container .navbar{
-	width:110vw;
+	width:139vw;
 	height:15vh;
 	/*background:#E4287C;*/
 	background:#0AFFFF;   /* OR background-color:hsl(180, 100%, 50%);*/
@@ -79,6 +79,9 @@ body{
 	margin-left:5em;
 	position: relative; /*Not important without it also working fine??*/
 	z-index:1;
+	padding-top:10px;
+	padding-bottom:20px;
+	text-align: center;
 }
 .wrapper h1{
 	/*color: red;*/
@@ -646,6 +649,78 @@ progress::-webkit-progress-bar {
 	color:yellow;
 	font-weight: bolder;
 }
+.experience-heading{
+	color:white;
+	font-weight:bolder;
+	text-align: center;
+	text-transform: capitalize;
+	font-size:65px;
+	/* margin-top:100px; */
+	padding-top: 100px;
+	padding-bottom:30px;
+}
+.card {
+	height: 400px;
+	width:500px;
+	position: relative;
+	padding: 20px;
+	/* box-sizing: border-box; */
+	display: flex;
+	/* align-items: flex-end; */
+	align-items: center;
+	text-decoration: none;
+	/* border: 4px solid #b0215e; */
+	border-radius:10px;
+	/* margin-bottom: 20px; */
+	margin-left:430px;
+	box-shadow: 0 0 10px orangered;
+	/* background-image: url('https://images.unsplash.com/photo-1516051662687-567d7c4e8f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80'); */
+    background-image: url('https://w0.peakpx.com/wallpaper/578/106/HD-wallpaper-tech-abstract-background-colorful-corpor-high-iridescent.jpg');
+	  /* background-size: cover; */
+	
+	@include media {
+	  height: 500px;
+	}
+  }
+  
+  .inner {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	background: white;
+	box-sizing: border-box;
+	padding: 40px;
+	
+	@include media {
+	  width: 50%;
+	  height: 100%;
+	}
+  }
+  
+  .title {
+	font-size: 28px;
+	color: black;  
+	text-align: center;
+	font-weight: 700;
+	/* color: #181818; */
+	text-shadow: 0px 2px 2px #a6f8d5;
+	position: relative;
+	margin: 0 0 20px 0;
+	
+	@include media {
+	  font-size: 30px;
+	}
+  }
+  
+  .subtitle {
+	color: #b0215e;
+	text-align: center;
+	font-weight:bolder;
+	font-size:20px;
+  }
+  
 
 .project{
 	background:#BCE954;
@@ -715,7 +790,82 @@ progress::-webkit-progress-bar {
    text-align:center;
    margin-top:10px;
  }
- 
+
+
+ .achievement-heading{
+	color:#FD1C03;
+	font-weight:bolder;
+	text-align: center;
+	text-transform: capitalize;
+	font-size:65px;
+	/* margin-top:100px; */
+	padding-top: 100px;
+	padding-bottom:30px;
+}
+
+ .cards-list {
+	z-index: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+  }
+  
+  .achievement-card {
+	margin: 30px auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+	cursor: pointer;
+	transition: 0.4s;
+  }
+  
+  .achievement-card .card_image {
+	width: inherit;
+	height: inherit;
+	border-radius: 40px;
+  }
+  
+  .achievement-card .card_image img {
+	width: inherit;
+	height: inherit;
+	border-radius: 40px;
+	object-fit: cover;
+  }
+  
+  .achievement-card .card_title {
+	text-align: center;
+	border-radius: 0px 0px 40px 40px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-top:-150px;
+	height: 40px;
+  }
+  
+  .achievement-card:hover {
+	transform: scale(0.9, 0.9);
+	box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+	  -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+	color:black;
+  }
+  
+  .title-black {
+	color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+	.card-list {
+	  /* On small screens, we are no longer using row direction but column */
+	  flex-direction: column;
+	}
+  }
+  
+  
  
  #contact{
    display: flex;
